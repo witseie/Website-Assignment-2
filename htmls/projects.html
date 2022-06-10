@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleProj.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+    <script src="../js/javaScript.js"></script>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <h1> <div id="output"> Projects</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <a href="blog.html" class="navBtn">Blog</a>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="flex">
+            <div class="card">
+                <div class="row">
+                    <div class="column">
+                        <h2 class="h2_custom p-name">Time Manipulation </h2>
+                            <div >
+                                <img class="cardImage" src="../Images/TimeProject.jpg" alt="">
+                            </div>
+                            <a href="https://github.com/TumiJourdan/Portfolio-Projects.git" target="_blank" class="btn u-link">Github</a>
+                    </div>
+                    <div class="column1">
+                            <div  >
+                                <p class="h-entry">
+                                    In this game the player can reverse time to solve puzzles. When the player reverses time 
+                                    the game records their movements and interactions, and then plays these back as a clone. 
+                                    In other words by recording and playing back their own movements, players can solve a co-op puzzle
+                                    with themselves.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="column">
+                        <h2 class="p-name">Dimension Jump </h2>
+                            <div >
+                                <img class="cardImage" src="../Images/DimensionJump.JPG" alt="">
+                            </div>
+                            <a href="https://github.com/TumiJourdan/Portfolio-Projects.git" target="_blank" class="btn u-link">Github</a>
+                    </div>
+                    <div class="column1">
+                            <div >
+                                <p class="h-entry">
+                                    This game allows the player to jump between two worlds to find a way to reach a key, to progress to the next level.
+                                    The design of the game focuses on the use of colors to display the mechanics to the player.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="column">
+                        <h2 class="p-name">Mutatio </h2>
+                            <div >
+                                <img class="cardImage" src="../Images/Reshape.JPG" alt="">
+                            </div>
+                            <a href="https://github.com/TumiJourdan/Portfolio-Projects.git" target="_blank" class="btn u-link">Github</a>
+                    </div>
+                    <div class="column1">
+                            <div >
+                                <p class="h-entry">
+                                    This was my final exam game for second year Game Design. The core mechanic is that the player
+                                    can adjust their weight and size to solve puzzles. Examples are entering small crevices or being heavy
+                                    enough to weigh down on a lever.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html>

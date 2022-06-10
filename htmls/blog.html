@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleBlog.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="../js/javaScript.js"></script>
+</head>
+
+<body>
+    <header class="navigaion">
+    
+        <nav>
+            <h1> <div id="output">Blog</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+
+
+            <ul>
+                <li>    
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>                
+                    <a href="blog.html" class="navBtn" id="blogHover">Blog</a>     
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+
+            
+
+
+        </nav>
+    </header>
+
+
+<main>
+    <div class="container">
+        <div class="flex">
+            <div class="card">
+                <h2>Hypertext </h2>            
+                    <p>
+                        The aim of the document is to answer the question “What is hypertext” in its own method. Noah
+                        Warden first covers how communities offer different answers to the question. These communities
+                        are the literary and the computer science community. Noah recognises the effect of a community on
+                        their definitions of the word and how each of their biased opinions of the definitions are valid.
+                    </p>   
+            <a href="hypertext.html" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <h2>What is a Browser? </h2>
+                <p>
+                    To understand what a browser is, I have decided to investigate how a browser works.
+    
+                    The browser interacts with 4 different parties: the client, DNS and server
+                    The client is the user’s computer. The Server is where the information regarding the website is stored.
+                    The Domain Name Server (DNS) routes the client to the correct server based on the domain name entered.
+                </p>
+                <a href="browser.html" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <h2>Bots </h2>
+                <p>
+                    
+                    There are three main types of bots to know when reviewing bots. Chatbots, Webcrawlers and Malicious bots. Chatbots are bots with the explicit purpose of interacting with the user. They are used to give quick responses, e.g the weather, welcoming a user to a server or for customer care. Webcrawlers also known as spiders, quickly scan through websites and index them. The search engine then uses this data to display appropriate results to the user. Malicious bots is a broad term that covers any and all bots made with malicious intent; for example: botnets, DDos, clickbots and spam bots.
+                </p>
+                <a href="bots.html" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <h2>Justice in Design</h2>
+                <p>
+                   
+                </p>
+                <a href="justiceDesign.html" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <h2>UX UX </h2>
+                <p>
+                    
+                </p>
+                <a href="uiux.html" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <h2>Reflection </h2>
+                <p>
+                   A reflection on the development of this website.
+                </p>
+                <a href="reflection.html" class="btn">Read More</a>
+            </div>
+           
+           
+        </div>
+        
+    </div>
+</main>
+
+<!--<h3>Example 1</h3>
+    <div class="quote">
+    We went <span data-spell="about" data-original="asdfa"></span> our <span data-spell="business" data-original="1!!#$@"></span>.
+    </div>
+<div id="output"></div>-->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html> 
